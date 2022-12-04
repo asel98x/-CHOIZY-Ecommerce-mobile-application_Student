@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.payment.PaymentFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/Shop_CompanyImg"
+            android:layout_width="0dp"
+            android:layout_height="270dp"
+            android:layout_marginTop="-5dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/empty_cart"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="220dp"
+            android:background="@drawable/white_top_rounded_box"
+            android:paddingBottom="90dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/Shop_CompanyImg">
+
+            <TextView
+                android:id="@+id/textView88"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="40dp"
+                android:text="Payment"
+                android:textColor="#5E5959"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="8dp"
+                android:orientation="vertical"
+                android:background="@drawable/border_bottom"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:paddingTop="5dp"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="Set Order Time"
+                    android:textColor="#0A191E"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+
+                <RadioGroup
+                    android:id="@+id/radioGroupVisitType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:checkedButton="@+id/radio_button_1">
+
+                    <RadioButton
+                        android:id="@+id/radio_button_1"
+                        style="Widget.MaterialComponents.CompoundButton.RadioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:buttonTint="@color/main"
+                        android:text="@string/order_now" />
+
+                    <RadioButton
+                        android:id="@+id/radio_button_2"
+                        style="Widget.MaterialComponents.CompoundButton.RadioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:buttonTint="@color/main"
+                        android:text="@string/advanced_order" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout61"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/border_bottom"
+                android:orientation="vertical"
+                android:paddingTop="16dp"
+                android:paddingBottom="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout6">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="@string/payment_type"
+                    android:textColor="#0A191E"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+
+                <LinearLayout
+                    android:id="@+id/location_liner"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/spinner_style"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="5dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView881">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="6"
+                        app:srcCompat="@drawable/ic_baseline_payment_24" />
+
+                    <Spinner
+                        android:id="@+id/cart_PaymentMethod"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="-2dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="#F4F5F7"
+                        android:ems="10"
+                        android:entries="@array/payment_types"
+                        android:padding="6dp"
+                        android:paddingLeft="15dp" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/paument"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                card_view:cardCornerRadius="10dp"
+                card_view:cardElevation="2dp"
+                card_view:layout_constraintEnd_toEndOf="parent"
+                card_view:layout_constraintStart_toStartOf="parent"
+                card_view:layout_constraintTop_toBottomOf="@+id/linearLayout61">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/subtotal2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="4dp"
+                            android:layout_weight="1"
+                            android:paddingLeft="16dp"
+                            android:text="@string/total"
+                            android:textColor="#0A191E"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            card_view:layout_constraintStart_toEndOf="@+id/Cart_OfferImg"
+                            card_view:layout_constraintTop_toBottomOf="@+id/Cart_OfferTitle" />
+
+                        <TextView
+                            android:id="@+id/cart_TotalAmount"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="4dp"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:paddingRight="16dp"
+                            android:text="Rs.980.00"
+                            android:textColor="#0A191E"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            card_view:layout_constraintStart_toEndOf="@+id/Cart_OfferImg"
+                            card_view:layout_constraintTop_toBottomOf="@+id/Cart_OfferTitle" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnOrderNow"
+                android:layout_width="0dp"
+                android:layout_height="54dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:backgroundTint="#F8774A"
+                android:text="@string/processed"
+                android:textColor="@color/white"
+                app:iconGravity="end"
+                android:textSize="16dp"
+                app:cornerRadius="50dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/paument" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

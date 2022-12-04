@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Choizy</string>
+    <string name="title_home">ගෙදර</string>
+    <string name="title_cart">මගේ කරත්තය</string>
+    <string name="title_account">ගිණුම</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="onboarding1_heading_2">Choizy වෙත</string>
+
+    <string name="onboarding1_text">දුර ඈත, කඳු යන වචනය පිටුපස,
+Vokalia සහ Consonantia යන රටවලට වඩා බොහෝ දුරින්, අන්ධ පාඨයන් ජීවත් වේ.</string>
+    <string name="offer_add_to_card">පිරිනැමීම කරත්තයට එකතු කරන ලදී</string>
+
+    <string name="clearCartDialogMsg">ඔබේ කරත්තයේ තවත් වෙළෙන්දෙක් අඩංගු වේ ඔබ කරත්තය ඉවත් කර නව අයිතමයක් එක් කිරීමට කැමති</string>
+    <string name="clear">පැහැදිලිව</string>
+    <string name="create_new_order">නව ඇණවුමක් සාදන්න</string>
+    <string name="pay_cancel">ගෙවීම අවලංගු කරන ලදී</string>
+    <string name="invalid_QR">වලංගු නොවන QR කේතය</string>
+    <string name="insufficient_credit">ප්රමාණවත් ණය</string>
+    <string name="delivery">භාරදීම</string>
+    <string name="pick_up">අවුලා ගන්න</string>
+    <string name="your_address">ඔබේ ලිපිනය</string>
+    <string name="set_delivery_address">බෙදා හැරීමේ ලිපිනය සකසන්න</string>
+    <string name="select_address">ලිපිනය තෝරන්න</string>
+    <string name="order_id">ඕඩර අංකය</string>
+    <string name="birthday">උපන් දිනය</string>
+    <string name="gender">ස්ත්රී පුරුෂ භාවය</string>
+    <string name="nic_number">NIC අංකය</string>
+    <string name="re_type_password">මුරපදය යළි ටයිප් කරන්න</string>
+    <string name="new_password">නව මුරපදය</string>
+    <string name="change_password">මුරපදය වෙනස් කරන්න</string>
+    <string name="change">වෙනස් කරන්න</string>
+    <string name="logout">පිටවීම</string>
+    <string name="submit">ඉදිරිපත් කරන්න</string>
+    <string name="write_feedback">ප්‍රතිපෝෂණ ලියන්න</string>
+    <string name="thank_feedback">ප්‍රතිපෝෂණය සඳහා ඔබට ස්තුතියි</string>
+    <string name="about_us">අපි ගැන</string>
+    <string name="language">භාෂාව</string>
+    <string name="english">ඉංග්රීසි</string>
+    <string name="sinhala">සිංහල</string>
+    <string name="tamil">දෙමළ</string>
+    <string name="purchases">මිලදී ගැනීම්</string>
+    <string name="deals_offers">ගනුදෙනු / දීමනා</string>
+    <string name="recommended">නිර්දේශ කර ඇත</string>
+    <string name="add_to_cart_this_offer">මෙම පිරිනැමීම කරත්තයට එක් කරන්න</string>
+    <string name="purchase_now_this_offer">මෙම දීමනාව දැන් මිලදී ගන්න</string>
+    <string name="description">විස්තර</string>
+    <string name="current_offers">වත්මන් දීමනා</string>
+    <string name="location">ස්ථානය</string>
+    <string name="order_now">දැන්ම ඇණවුම් කරන්න</string>
+    <string name="advanced_order">උසස් ඇණවුම</string>
+    <string name="payment_type">ගෙවීම් වර්ගය</string>
+    <string name="total">සමස්ත</string>
+    <string name="processed">සකසන ලදී</string>
+    <string name="order_pleased_successfully">ඇණවුම සතුටුයි සාර්ථකයි!</string>
+    <string name="your_order_number">ඔබගේ ඇණවුම් අංකය</string>
+    <string name="go_to_home">Go to Home</string>
+    <string name="thank_you_come_again">ස්තුතියි නැවත එන්න!</string>
+
+    <string name="ongoing">සිදුවෙමින් පවතී</string>
+    <string name="history">ඉතිහාසය</string>
+    <string name="you_order">ඔබ ඇණවුම් කරන්න</string>
+    <string name="go_to_payments">ගෙවීම් වෙත යන්න</string>
+
+    <string name="email">විද්යුත් තැපෑල</string>
+    <string name="mobile">ජංගම</string>
+
+    <string name="about_txt">"Choizy" යනු hogwards විශ්ව විද්‍යාලයේ ඉගෙනුම ලබන සිසුන් සඳහා ඉගෙනීමට පහසුකම් සැලසීම සඳහා නිකුත් කරන ලද ජංගම යෙදුමකි. මෙමගින් ලබා දෙන විවිධ කාණ්ඩ වලින් සිසුන්ට ලබාගත හැකි බොහෝ දේ ඇත. මෙහි ඇති විශේෂත්වය වන්නේ අප විශ්වවිද්‍යාලයේ ඉගෙනුම ලබන සිසුන්ට මෙහි ඇති සෑම දෙයකටම දීමනා ලැබීමයි. කෙටි කාලීන ණය පහසුකම් ද ඊට ඇතුළත් ය. මෙය නිර්මාණය කිරීමෙන් අපගේ සිසුන්ගේ ඉගෙනුම් කටයුතු සඳහා යම් වාසියක් සහ සහයෝගයක් ලැබෙනු ඇතැයි අපි බලාපොරොත්තු වෙමු.</string>
+
+    <string name="login">ඇතුල් වන්න</string>
+    <string name="student_id">ශිෂ්ය හැඳුනුම්පත</string>
+    <string name="password">රහස් පදය</string>
+    <string name="type_here">මෙහි ටයිප් කරන්න...</string>
+    <string name="log_in">@string/login</string>
+
+    <string-array name="payment_types">
+        <item>මුදල්</item>
+        <item>කාඩ්පත</item>
+        <item>ණය</item>
+        <item>QR-ගෙවන්න</item>
+    </string-array>
+    <string-array name="payment_typesWithQR">
+        <item>මුදල්</item>
+        <item>කාඩ්පත</item>
+        <item>ණය</item>
+    </string-array>
+</resources>

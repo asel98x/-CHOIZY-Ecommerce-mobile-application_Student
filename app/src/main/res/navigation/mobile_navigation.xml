@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.n21.choizy.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" >
+
+        <action
+            android:id="@+id/action_navigation_home_to_shopsByCategoryFragment"
+            app:destination="@id/shopsByCategoryFragment" />
+        <action
+            android:id="@+id/action_navigation_home_to_choizyMap"
+            app:destination="@id/choizyMap" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_cart"
+        android:name="com.n21.choizy.ui.cart.CartFragment"
+        android:label="@string/title_cart"
+        tools:layout="@layout/fragment_cart" >
+        <action
+            android:id="@+id/action_navigation_cart_to_paymentOptionFragment"
+            app:destination="@id/paymentOptionFragment" />
+        <action
+            android:id="@+id/action_navigation_cart_to_paymentFragment"
+            app:destination="@id/paymentFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_account"
+        android:name="com.n21.choizy.ui.account.AccountFragment"
+        android:label="@string/title_account"
+        tools:layout="@layout/fragment_account" >
+        <action
+            android:id="@+id/action_navigation_account_to_purchaseFragment"
+            app:destination="@id/purchaseFragment" />
+        <action
+            android:id="@+id/action_navigation_account_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/shopsByCategoryFragment"
+        android:name="com.n21.choizy.ui.shopsByCategory.ShopsByCategoryFragment"
+        android:label="fragment_shops_by_category"
+        tools:layout="@layout/fragment_shops_by_category" >
+        <action
+            android:id="@+id/action_shopsByCategoryFragment_to_shopFragment"
+            app:destination="@id/shopFragment" />
+        <argument
+            android:name="CategoryName"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/shopFragment"
+        android:name="com.n21.choizy.ui.shop.ShopFragment"
+        android:label="fragment_shop"
+        tools:layout="@layout/fragment_shop" >
+        <action
+            android:id="@+id/action_shopFragment_to_offerDetailsFragment"
+            app:destination="@id/offerDetailsFragment" />
+        <argument
+            android:name="companyID"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/orderSuccessFragment"
+        android:name="com.n21.choizy.ui.orderSuccess.OrderSuccessFragment"
+        android:label="fragment_order_success"
+        tools:layout="@layout/fragment_order_success" >
+        <action
+            android:id="@+id/action_orderSuccessFragment_to_navigation_home"
+            app:destination="@id/navigation_home"
+            app:popUpTo="@id/mobile_navigation"
+            app:popUpToInclusive="true" />
+        <argument
+            android:name="orderID"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/offerDetailsFragment"
+        android:name="com.n21.choizy.ui.offerDetails.OfferDetailsFragment"
+        android:label="fragment_offer_details"
+        tools:layout="@layout/fragment_offer_details" >
+        <argument
+            android:name="OfferID"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_offerDetailsFragment_to_navigation_cart"
+            app:destination="@id/navigation_cart" />
+    </fragment>
+    <fragment
+        android:id="@+id/paymentFragment"
+        android:name="com.n21.choizy.ui.payment.PaymentFragment"
+        android:label="fragment_payment"
+        tools:layout="@layout/fragment_payment"
+
+        >
+        <action
+            android:id="@+id/action_paymentFragment_to_orderSuccessFragment"
+            app:destination="@id/orderSuccessFragment" />
+        <action
+            android:id="@+id/action_paymentFragment_to_qr_scanner"
+            app:destination="@id/qr_scanner"
+
+            />
+        <argument android:name="haveAdvance"
+            app:argType="boolean" />
+    </fragment>
+    <fragment
+        android:id="@+id/deliveryFragment"
+        android:name="com.n21.choizy.ui.delivery.DeliveryFragment"
+        android:label="fragment_delivery"
+        tools:layout="@layout/fragment_delivery" >
+        <action
+            android:id="@+id/action_deliveryFragment_to_orderSuccessFragment"
+            app:destination="@id/orderSuccessFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/paymentOptionFragment"
+        android:name="com.n21.choizy.ui.paymentOption.PaymentOptionFragment"
+        android:label="fragment_payment_option"
+        tools:layout="@layout/fragment_payment_option" >
+        <action
+            android:id="@+id/action_paymentOptionFragment_to_deliveryFragment"
+            app:destination="@id/deliveryFragment" />
+        <action
+            android:id="@+id/action_paymentOptionFragment_to_paymentFragment"
+            app:destination="@id/paymentFragment" />
+        <argument
+            android:name="haveAdvance"
+            app:argType="boolean" />
+    </fragment>
+    <fragment
+        android:id="@+id/choizyMap"
+        android:name="com.n21.choizy.ui.Choizymap.ChoizyMap"
+        android:label="fragment_choizy_map"
+        tools:layout="@layout/fragment_choizy_map" />
+    <fragment
+        android:id="@+id/qr_scanner"
+        android:name="com.n21.choizy.ui.Qr_scanner"
+        android:label="fragment_qr_scanner"
+        tools:layout="@layout/fragment_qr_scanner" >
+        <action
+            android:id="@+id/action_qr_scanner_to_paymentFragment"
+            app:destination="@id/paymentFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/purchaseFragment"
+        android:name="com.n21.choizy.ui.purchase.PurchaseFragment"
+        android:label="fragment_purchase"
+        tools:layout="@layout/fragment_purchase" >
+        <action
+            android:id="@+id/action_purchaseFragment_to_qr_OngoingFragment"
+            app:destination="@id/qr_OngoingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/qr_OngoingFragment"
+        android:name="com.n21.choizy.ui.purchase.Qr_OngoingFragment"
+        android:label="fragment_qr__ongoing"
+        tools:layout="@layout/fragment_qr__ongoing" >
+        <action
+            android:id="@+id/action_qr_OngoingFragment_to_purchaseFragment"
+            app:destination="@id/purchaseFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.n21.choizy.ui.account.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+</navigation>

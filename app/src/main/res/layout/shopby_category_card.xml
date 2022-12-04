@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/shopBy_category_cardTxt"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="12dp"
+    android:background="@drawable/short_message_layout"
+    android:maxLines="1"
+    android:padding="8dp"
+    android:paddingStart="12dp"
+    android:paddingEnd="12dp"
+    android:text="Food"
+    android:textColor="@color/white">
+
+</TextView>
